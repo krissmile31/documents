@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Quản trị hệ thống</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="themes/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="themes/css/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="themes/css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="themes/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="themes/css/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="themes/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- DataTables CSS -->
+    <link href="themes/css/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="themes/css/dataTables.responsive.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="themes/js/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div id="wrapper">
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="dashbroad.html">Trang Quản Trị</a>
+
+    </div>
+    <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-messages">
+                <li>
+                    <a href="#">
+                        <div>
+                            <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                        </div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                        </div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                        </div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a class="text-center" href="#">
+                        <strong>Read All Messages</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-alerts">
+                <li>
+                    <a href="admin.php?controller=comment">
+                        <div>
+                            <i class="fa fa-comment fa-fw"></i> New Comment
+                            <span class="pull-right text-muted small">4 minutes ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                            <span class="pull-right text-muted small">12 minutes ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <i class="fa fa-envelope fa-fw"></i> Message Sent
+                            <span class="pull-right text-muted small">4 minutes ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <i class="fa fa-tasks fa-fw"></i> New Task
+                            <span class="pull-right text-muted small">4 minutes ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                            <span class="pull-right text-muted small">4 minutes ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a class="text-center" href="#">
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-user">
+                <li><a href="admin.php?controller=user&amp;action=info&amp;uid=25"><i class="fa fa-user fa-fw"></i> User Profile</a></li>
+                                    <li><a href="admin.php?controller=user&amp;action=list"><i class="fa fa-gear fa-fw"></i>List quản trị</a></li>
+                    <li><a href="admin.php?controller=user&amp;action=add"><i class="fa fa-gear fa-fw"></i>Thêm quản trị</a></li>
+                                <li class="divider"></li>
+                <li> <a href="admin.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="navbar-default sidebar" role="navigation">
+        <div class="sidebar-nav navbar-collapse">
+            <ul class="nav" id="side-menu">
+                <li class="sidebar-search">
+                    <form id="product_form" method="post" action="admin.php?controller=product" role="form">
+                    <div class="input-group custom-search-form">
+                        <input id="search" name="search" type="text" class="form-control" placeholder="Tìm kiếm"/>
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                    </div>
+                        </form>
+                </li>
+
+                <li>
+                    <a href="dashbroad.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                </li>
+                <li>
+                        <a href="role.html"><i class="fa fa-cog fa-fw"></i> Quyền truy cập</a>
+                </li>
+                    <li>
+                        <a href="#"><i class="fa fa-wrench fa-fw"></i> Cấu hình website<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="banner.html">Quản lý Banner</a>
+                            </li>
+                            <li>
+                                <a href="slideshow.html">Quản lý Slideshow chính</a>
+                            </li>
+                            <li>
+                                <a href="contactinfo.html">Quản lý Thông tin liên hệ</a>
+                            </li>
+                            <li>
+                                <a href="intro.html">Trang giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="advertise.html">Banner quảng cáo</a>
+                            </li>
+                        </ul>
+                    </li>
+                                <li>
+                    <a href="#"><i class="fa fa-shopping-cart fa-fw"></i> Quản lý đơn hàng<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="order_inprocess.html"><i class="fa fa-table fa-fw"></i>Danh sách chưa xử lý</a>
+                        </li>
+                        <li>
+                            <a href="order_complete.html"><i class="fa fa-table fa-fw"></i>Danh sách đã xử lý</a>
+                        </li>
+                        <li>
+                            <a href="order.html"><i class="fa fa-table fa-fw"></i>Danh sách đơn hàng</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-folder-open fa-fw"></i>Quản lý sản phẩm <span class="fa arrow"></span></a>
+                    <ul class="nav nav-third-level">
+                        <li>
+                            <a href="newproduct.html">Sản phẩm mới</a>
+                        </li>
+                        <li>
+                            <a href="orderproduct.html">Sản phẩm order</a>
+                        </li>
+                        <li>
+                            <a href="saleproduct.html">Sản phẩm khuyến mại</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="category.html"><i class="fa fa-folder-open fa-fw"></i>Quản lý danh mục sản phẩm</a>
+                </li>
+
+                <li>
+                    <a href="group.html"><i class="fa fa-folder-open fa-fw"></i>Quản lý nhóm danh mục</a>
+                </li>
+
+
+                <li>
+                    <a href="livesport.html"><i class="fa fa-youtube-play fa-fw"></i> Quản lý phát video</a>
+                </li>
+
+                <li>
+                    <a href="comment.html"><i class="fa fa-comments-o fa-fw"></i>Quản lý bình luận</a>
+                </li>
+
+                <li>
+                    <a href="feedback.html"><i class="fa fa-envelope-o fa-fw"></i>Phản hồi của khách hàng</a>
+                </li>
+                <li>
+                    <a href="trangchu/index.html" target="_blank"><i class="fa fa-home fa-fw"></i>Trang chủ<span class="fa arrow"></span></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav><div id="page-wrapper">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Dashboard</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa fa-comments fa-5x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge"> 0</div>
+                            <div>New Comments !</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="admin.php?controller=comment">
+                    <div class="panel-footer">
+                        <span class="pull-left">Xem chi tiết</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-green">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa fa-tasks fa-5x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">1</div>
+                            <div>New Visiter</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="admin.php?controller=counter">
+                    <div class="panel-footer">
+                        <span class="pull-left">Xem chi tiết</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="panel panel-red">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <i class="fa fa-support fa-5x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">0</div>
+                            <div>New Feedback !</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="admin.php?controller=feedback">
+                    <div class="panel-footer">
+                        <span class="pull-left">Xem chi tiết</span>
+                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="panel panel-default">
+    <div class="panel-heading text-center">
+        <b>Danh sách các đơn hàng chưa xử lý</b>
+    </div>
+    <div class="panel-body">
+        <div class="dataTable_wrapper">
+            <table class="table table-striped table-bordered table-hover" id="dataTables-order_inprocess">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Khách hàng</th>
+                    <th>Thời gian</th>
+                    <th>Trạng thái</th>
+                    <th>Chức năng</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td>28</td>
+                        <td><a href="admin.php?controller=order&amp;action=view&amp;oid=28">hieu</a></td>
+                        <td>2019-12-21 20:51:52</td>
+                        <td>Chưa xử lý</td>
+                        <td>
+                            <a href="admin.php?controller=order&amp;action=view&amp;oid=28"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                        </td>
+                    </tr>
+                                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#dataTables-order_inprocess').DataTable({
+            responsive: true,"order":[[0, 'desc']]
+        });
+    });
+</script>            <div class="panel panel-default">
+    <div class="panel-heading text-center">
+       <b>Sản phẩm mới cập nhật</b>
+    </div>
+    <div class="panel-body">
+        <div class="dataTable_wrapper">
+            <table class="table table-striped table-bordered table-hover" id="dataTables-new">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Tên SP</th>
+                    <th>Giá</th>
+                    <th>Ngày tạo</th>
+                    <th>Img</th>
+                    <th>View</th>
+                    <th>Chức năng</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">2</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=2">Macbook Air 13 128GB 2019 Vàng (MVFM2)</a>
+                        </td>
+                        <td>26.000.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/macbook-air-13-2019-gold-1.jpg?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=2"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=2"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">4</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=4">Apple MacBook Air 13 inch 128GB MREA2 Bạc Chính hãng(2018)</a>
+                        </td>
+                        <td>26.000.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/macbook-air-13-silver-mrea2.jpg?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=4"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=4"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">5</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=5">Macbook Air 13 128GB 2019 Xám (MVFH2)</a>
+                        </td>
+                        <td>20.300.300</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/macbook-air-13-2019-grey-1.png?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=5"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=5"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">8</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=8">Apple Macbook Air 13inch 256GB Bạc MREC2 Chính hãng(2018)</a>
+                        </td>
+                        <td>33.500.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/macbook-air-13-2019-silver-1_1.png?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=8"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=8"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">9</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=9">Macbook Air 13 256GB 2019 Xám (MVFJ2)</a>
+                        </td>
+                        <td>32.000.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/macbook-air-13-2019-grey-256_mvfj2.png?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=9"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=9"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">10</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=10">Apple Macbook Air 13inch 256GB Xám MRE92 Chính hãng(2018)</a>
+                        </td>
+                        <td>31.000.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/macbook-air-13-2018-grey-256gb-mre92.png?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=10"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=10"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">16</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=16">Laptop Dell Latitude 7490 70156592(i7-8650U / 8GB/ 256GB)</a>
+                        </td>
+                        <td>30.990.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/delllatitude7490.jpg?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=16"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=16"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">18</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=18">Laptop Dell Inspiron 3480 N4I5107W(i5-8265U / 4G/ 1TB)</a>
+                        </td>
+                        <td>12.990.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/dellinspiron3480n4i5107w.jpg?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=18"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=18"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">24</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=24">Laptop Dell Inspiron N3476 C4I51121W(i5-8250U / 4GB/ 1TB)</a>
+                        </td>
+                        <td>12.990.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/dell-inspiron-n3476-c4i51121w-1.png?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=24"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=24"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">25</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=25">Laptop Dell Inspiron 7591 KJ2G41(I7 9750H 8GB / 256GB SSD/15.6FHD / VGA 3GB)</a>
+                        </td>
+                        <td>29.990.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/dellInspiron-7591-kj2g41.jpg?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=25"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=25"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">26</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=26">Laptop Dell Inspiron N5480B(i5-8265U / 8 GB/ 256 GB SSD/ 14.0 Full HD)</a>
+                        </td>
+                        <td>15.990.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/dell-inspiron-5480-n5480a.jpg?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=26"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=26"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">27</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=27">Laptop Dell Inspiron 3593 (70197459)(i7-1065G7 / 8 GB/ 512 GB SSD/ 15.6 FHD/ VGA 2 GB)</a>
+                        </td>
+                        <td>25.500.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/dellinspiron3593-70197459.jpg?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=27"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=27"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">32</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=32">Chuột chơi game không dây Logitech G603 Đen(MA.283.B)</a>
+                        </td>
+                        <td>2.900.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/chu_t-gaming-logitech-g603-lightspeed-wireless.jpg?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=32"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=32"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">33</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=33">Chuột Apple Magic Mouse 2 Bạc Cũ(PKMB.001)</a>
+                        </td>
+                        <td>1.600.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/applemousemagicmouse2.jpg?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=33"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=33"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">34</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=34">Chuột chơi Game có dây Logitech G102(MB.143)</a>
+                        </td>
+                        <td>440.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/chuotlogitechg102.jpg?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=34"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=34"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                    <tr class="odd gradeX">
+                        <td><h4 class="item_name">35</h4></td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=35">Chuột Apple Magic Mouse 2 MRME2</a>
+                        </td>
+                        <td>2.500.000</td>
+                        <td class="center" style="width: 15%">2019-11-29</td>
+                        <td class="center"><image src="public/upload/product/Applemagicmouse2MRME2.jpg?time=1577804511" style="max-width:50px;" /></a></td>
+                        <td class="center">2</td>
+                        <td>
+                            <a href="admin.php?controller=product&amp;action=edit&amp;pid=35"
+                               class="text-danger"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="admin.php?controller=product&amp;action=delete&amp;pid=35"
+                               class="text-danger deleteitem"><i class="glyphicon glyphicon-remove"></i></a>
+                        </td>
+                    </tr>
+                                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#dataTables-new').DataTable({
+        "order":[[3, 'desc']]
+        });
+    });
+</script>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                </div>
+                <div class="panel-body">
+                    <div class="list-group">
+
+                        <a href="admin.php?controller=order&action=view&oid=31" class="list-group-item">
+                            <i class="fa fa-upload fa-fw"></i> Đơn hàng mới
+                            <span class="pull-right text-muted small"><em>21/12/2019 at 20:55:28</em>
+                            </span>
+                        </a>
+
+                        <a href="admin.php?controller=order" class="list-group-item">
+                            <i class="fa fa-shopping-cart fa-fw"></i> Đơn hàng chưa xử lý
+                            <span class="pull-right text-muted small"><em>1</em>
+                            </span>
+                        </a>
+
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-money fa-fw"></i> Đơn hàng đã xử lý
+                            <span class="pull-right text-muted small"><em>3</em>
+                            </span>
+                        </a>
+
+                        <a href="admin.php?controller=comment&action=edit&comid=" class="list-group-item">
+                            <i class="fa fa-comment fa-fw"></i>Bình luận mới
+                            <span class="pull-right text-muted small"><em>30/11/1999 at 00:00:00</em>
+                            </span>
+                        </a>
+
+                        <a href="admin.php?controller=feedback&action=edit&fid=" class="list-group-item">
+                            <i class="fa fa-envelope fa-fw"></i>Tin nhắn mới
+                            <span class="pull-right text-muted small"><em>30/11/1999 at 00:00:00</em>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-bar-chart-o fa-fw"></i> Đơn hàng đã xử lý
+                </div>
+                <div class="panel-body">
+                    <div class="list-group">
+                                                    <a href="admin.php?controller=order&amp;action=view&amp;oid=31" class="list-group-item">
+                                <i class="fa fa-shopping-cart fa-fw"></i> hieu                                <span class="pull-right text-muted small"><em>30/11/1999 at 00:00:00</em>
+                                </span>
+                            </a>
+                                                    <a href="admin.php?controller=order&amp;action=view&amp;oid=30" class="list-group-item">
+                                <i class="fa fa-shopping-cart fa-fw"></i> hieu                                <span class="pull-right text-muted small"><em>30/11/1999 at 00:00:00</em>
+                                </span>
+                            </a>
+                                                    <a href="admin.php?controller=order&amp;action=view&amp;oid=29" class="list-group-item">
+                                <i class="fa fa-shopping-cart fa-fw"></i> hieu                                <span class="pull-right text-muted small"><em>30/11/1999 at 00:00:00</em>
+                                </span>
+                            </a>
+                                            </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-bar-chart-o fa-fw"></i> Trình phát youtube
+                </div>
+                <div class="panel-body">
+                    <div class="list-group">
+                                                    <a href="admin.php?controller=livesport&amp;action=edit&amp;id=2" class="list-group-item">
+                                <i class="fa fa-youtube-play fa-fw"></i> WWDC 2019 — Goodnight Developers — Apple                            </a>
+                                                    <a href="admin.php?controller=livesport&amp;action=edit&amp;id=1" class="list-group-item">
+                                <i class="fa fa-youtube-play fa-fw"></i> Introducing MacBook Pro 16-inch — Apple                            </a>
+                                            </div>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <ul class="chat">
+                                    </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- /#wrapper -->
+<!-- Bootstrap Core JavaScript -->
+<script src="themes/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="themes/js/metisMenu.min.js"></script>
+
+<!-- Morris Charts JavaScript -->
+<script src="themes/js/raphael-min.js"></script>
+<script src="themes/js/morris.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="themes/js/sb-admin-2.js"></script>
+
+<!-- DataTables JavaScript -->
+<script src="themes/js/jquery.dataTables.min.js"></script>
+<script src="themes/js/dataTables.bootstrap.min.js"></script>
+<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+
+<!--<script type="text/javascript">
+    document.title = "<?/*=$title;*/?>"
+</script>-->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(this).attr("title", "Quản trị hệ thống");
+    });
+</script>
+<script>
+    $('.deleteitem').on('click', function () {
+        return confirm('Are you sure?');
+    });
+</script>
+</body>
+
+</html>

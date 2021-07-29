@@ -1,0 +1,2 @@
+[Mon, 07 Jul 2014 17:20:36 +0700] [27.72.54.116] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Mon, 07 Jul 2014 17:21:17 +0700] [66.220.152.116] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]

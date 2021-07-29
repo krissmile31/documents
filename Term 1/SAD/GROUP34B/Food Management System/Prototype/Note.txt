@@ -1,0 +1,7 @@
+Run in http://localhost:3000/
+
+Installation:
+	XAMPP
+	Node js environment
+
+Import database: test.sql

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../partials/js'); -%>
+  <%- include('../partials/head'); -%>
+  <body class="container-fluid">
+    <div class="jumbotron">
+    	<%- include('../partials/header'); %>
+    	<div class="card">
+    		<div class="card-body">
+				<h3 class="card-title">Name: <%- product.name %></h3>
+				<div class="card-subtitle text-disable">Price: <%- product.price %></div>
+				<div class="card-text">Ingredient: <%- product.ingredient %></div>
+				<div class="card-text">Recipe: <%- product.recipe %></div>
+				<div class="card-text">Description: <%- product.description %></div>
+			</div>
+			<div class="card-footer">
+				<% if (userID <= 0) { -%>
+					<span>You need to</span>
+					<a class="ml-1 mr-1" href="/users/login"> Login </a>
+					<span> to choose this
+					</span>
+				<% } else { -%>
+					<div class="btn-group w-25">
+						<% if (isAdmin) { -%>
+							<a href="/product/edit/<%- product.id %>" class="btn btn-primary w-100" id="checkboxButton<%- product.id %>">Edit</a>
+							<a href="/product/delete/<%- product.id %>" class="btn btn-danger w-100" id="checkboxButton<%- product.id %>">Delete</a>
+						<% } else { -%>
+							<div class="btn btn-primary w-100 chooseProductButton" id="chooseProductButton-<%- product.id %>">Choose Product</div>
+						<% } -%>
+					</div>
+				<% } -%>
+			</div>
+		</div>
+    </div>
+  	<script defer src="/javascripts/chooseProductButton.js"></script>
+  </body>
+</html>

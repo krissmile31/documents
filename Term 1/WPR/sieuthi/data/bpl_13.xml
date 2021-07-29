@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plan>
+  <id>13</id>
+  <lang></lang>
+  <title>hotdeal v1.1</title>
+  <form>sequential</form>
+  <width>330</width>
+  <height>203</height>
+  <banners>
+    <banners_item>
+      <id>15</id>
+      <title>hotdeal v1.1</title>
+      <clid>0</clid>
+      <file_name>banner.png</file_name>
+      <file_ext>png</file_ext>
+      <file_mime>image/png</file_mime>
+      <file_width>301</file_width>
+      <file_height>389</file_height>
+      <file_alt></file_alt>
+      <file_click>http://megacode.vn</file_click>
+    </banners_item>
+  </banners>
+</plan>

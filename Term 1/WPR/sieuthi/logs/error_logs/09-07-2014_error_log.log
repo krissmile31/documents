@@ -1,0 +1,3 @@
+[Wed, 09 Jul 2014 12:36:16 +0700] [113.22.30.131] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Wed, 09 Jul 2014 18:38:48 +0700] [66.249.67.161] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Wed, 09 Jul 2014 22:37:28 +0700] [66.249.79.161] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]

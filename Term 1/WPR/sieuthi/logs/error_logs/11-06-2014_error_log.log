@@ -1,0 +1,5 @@
+[Wed, 11 Jun 2014 15:10:53 +0700] [115.73.247.234] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Wed, 11 Jun 2014 18:59:39 +0700] [123.21.143.151] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Wed, 11 Jun 2014 19:03:27 +0700] [123.21.143.151] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogscate.php] [LINE: 115]
+[Wed, 11 Jun 2014 21:07:49 +0700] [58.186.122.96] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Wed, 11 Jun 2014 23:42:36 +0700] [116.100.35.94] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]

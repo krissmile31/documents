@@ -1,0 +1,5 @@
+[Fri, 27 Jun 2014 00:06:18 +0700] [118.68.137.78] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Fri, 27 Jun 2014 00:06:24 +0700] [118.68.137.78] [Notice(8): Undefined index: id] [FILE: /modules/shops/funcs/loadcart.php] [LINE: 47]
+[Fri, 27 Jun 2014 08:18:47 +0700] [58.187.121.60] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Fri, 27 Jun 2014 17:31:52 +0700] [183.91.7.219] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Fri, 27 Jun 2014 23:08:59 +0700] [113.173.174.108] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>SEI</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>TypeHierarchy/utils/NotFoundException.java</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Downloads/NotFoundException.java</locationURI>
+		</link>
+		<link>
+			<name>TypeHierarchy/utils/NotPossibleException.java</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Downloads/NotPossibleException.java</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

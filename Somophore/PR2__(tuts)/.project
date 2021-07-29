@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>PR2__(tuts)</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/tut1/sales.dat</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Downloads/sales.dat</locationURI>
+		</link>
+		<link>
+			<name>src/tut3/Hello.j</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Downloads/Hello.j</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

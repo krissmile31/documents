@@ -1,0 +1,3 @@
+﻿CREATE DATABASE IF NOT EXISTS csmain;
+CREATE USER 'csuser'@'%' IDENTIFIED BY 'oHJRcvvsUEWx7OXW';
+GRANT ALL ON csmain.* TO 'csuser'@'%';

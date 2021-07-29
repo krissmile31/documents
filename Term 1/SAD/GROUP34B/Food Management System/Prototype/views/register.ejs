@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head'); -%>
+  <body class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="jumbotron col-md-4 col-sm-8 position-absolute" id="form">
+        <h2 class="text-center">Sign Up</h2>
+        <form action="/users/register" method="post" class="">
+          <div class="form-group">
+            <label for="inputname">First & Last name</label>
+            <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" name="name">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" aria-describedby="addressHelp" name="address">
+          </div>
+          <div class="form-group">
+            <label for="inputUsername">Username</label>
+            <input type="text" class="form-control" id="inputUsername" aria-describedby="usernameHelp" value="<%= (typeof username != 'undefined') ? username : '' %>" name="username">
+          </div>
+          <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" name="password">
+          </div>
+          <div class="form-group">
+            <label for="inputRePassword">Re-enter Password</label>
+            <input type="password" class="form-control" id="inputRePassword" name="rePassword">
+          </div>
+          <% if (typeof error != 'undefined') { %>
+            <p class='text-danger'><%= error %></p>
+          <% } %>
+          <button type="submit" class="btn btn-primary col-4 d-sm-inline-block">Sign Up</button>
+          <a class="col" href="/users/login">Log In to Your Account</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

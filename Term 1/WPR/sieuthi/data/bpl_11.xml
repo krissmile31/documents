@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plan>
+  <id>11</id>
+  <lang></lang>
+  <title>Ads web 0 đồng</title>
+  <form>sequential</form>
+  <width>230</width>
+  <height>250</height>
+  <banners>
+    <banners_item>
+      <id>13</id>
+      <title>banner web ko đồng</title>
+      <clid>0</clid>
+      <file_name>bigweb_2_2.png</file_name>
+      <file_ext>png</file_ext>
+      <file_mime>image/png</file_mime>
+      <file_width>220</file_width>
+      <file_height>250</file_height>
+      <file_alt></file_alt>
+      <file_click>http://megaonline.vn/</file_click>
+    </banners_item>
+  </banners>
+</plan>

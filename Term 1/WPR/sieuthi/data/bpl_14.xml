@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plan>
+  <id>14</id>
+  <lang></lang>
+  <title>Mega Online</title>
+  <form>sequential</form>
+  <width>857</width>
+  <height>104</height>
+  <banners>
+    <banners_item>
+      <id>16</id>
+      <title>Mega online</title>
+      <clid>0</clid>
+      <file_name>banner_vanban_2.png</file_name>
+      <file_ext>png</file_ext>
+      <file_mime>image/png</file_mime>
+      <file_width>1199</file_width>
+      <file_height>104</file_height>
+      <file_alt></file_alt>
+      <file_click>http://megaonline.vn/</file_click>
+    </banners_item>
+  </banners>
+</plan>

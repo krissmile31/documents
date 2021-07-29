@@ -1,0 +1,8 @@
+[Wed, 16 Jul 2014 09:54:13 +0700] [113.160.165.122] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Wed, 16 Jul 2014 10:03:40 +0700] [173.252.112.112] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Wed, 16 Jul 2014 11:02:42 +0700] [173.252.112.114] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Wed, 16 Jul 2014 13:53:20 +0700] [14.162.82.99] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Wed, 16 Jul 2014 13:54:11 +0700] [173.252.110.115] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Wed, 16 Jul 2014 15:23:09 +0700] [118.71.115.200] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Wed, 16 Jul 2014 17:25:37 +0700] [66.249.77.87] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Wed, 16 Jul 2014 21:57:59 +0700] [118.69.187.111] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]

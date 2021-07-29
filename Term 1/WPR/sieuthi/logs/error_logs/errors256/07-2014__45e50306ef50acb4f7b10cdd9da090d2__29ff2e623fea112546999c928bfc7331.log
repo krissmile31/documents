@@ -1,0 +1,6 @@
+TIME: Sat, 05 Jul 2014 14:22:32 +0700
+IP: 183.81.78.158
+INFO: User Error(256): Error! Unknown database (Code: 1049)
+FILE: /mainfile.php
+LINE: 292
+USER-AGENT: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36

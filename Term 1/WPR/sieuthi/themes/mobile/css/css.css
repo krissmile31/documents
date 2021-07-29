@@ -1,0 +1,328 @@
+@font-face 
+{
+	font-family: UTM_Cafeta;
+	src: url('../fonts/UTM_Cafeta.ttf'); 
+}
+*{ margin:0; padding:0; outline:0;}
+form,a,img { margin: 0; padding: 0; border:0;}
+a{ color:#333333; text-decoration:none; transition:all 0.3s ease 0s;}
+a:hover{ color:#116BA2;}
+body{ background:#fff; font-family: Arial; font-size: 12px; color:#000; line-height:17px;}
+.clear{ clear:both;}
+.header_top{ border-bottom:1px #D1D1D1 solid; background:#F3F3F3;}
+.fix_width_1200{ width:1200px; margin:0 auto;}
+.fix_width_1200.bg_top{ background:#F3F3F3;}
+.fix_width_1200.bg_footer_1{ background:#272727; padding:15px 0;}
+.fix_width_1200.bg_footer_2{ background:#FF3234;}
+.header_support_phone{ background:url(../images/icon_phone.png) no-repeat left center; padding-left:30px; line-height:35px; color:#58595b; float:left; width:330px;}
+.header_support_phone strong{ font-weight:bold; color:#116BA2; font-size:16px;}
+.header_support_phone.kythuat{ background-image:url(../images/icon_phone_2.png); width:215px;}
+.header_support_phone.kythuat strong{ color:#E47100;}
+.header_support_yahoo{ position:relative; background:url(../images/support_yahoo.png) no-repeat left center; width:150px; height:22px; float:left; margin-top:7px;}
+.header_support_yahoo > a{ display:block; padding-left:40px; font-weight:bold; line-height:24px; cursor:pointer;}
+.header_support_skype{ position:relative; background:url(../images/support_skype.png) no-repeat left center; width:150px; height:26px; float:left; margin-top:4px; margin-left:30px;}
+.header_support_skype > a{ display:block; padding-left:40px; font-weight:bold; line-height:28px; cursor:pointer;}
+.header_support_yahoo .yahoo_list, .header_support_skype .skype_list{ background:#FFFFFF; text-align:center; padding:5px 5px 0 5px; position:absolute; top:22px; left:13px; display:none;
+	border:1px #CCCCCC solid; border-top:none;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+	z-index:1000;
+}
+.header_support_yahoo:hover .yahoo_list{ display:block;}
+.header_support_skype:hover .skype_list{ display:block;}
+.header_support_skype .yahoo_list{ top:22px; left:13px;}
+.header_support_skype .skype_list{ top:25px; left:22px;}
+.header_support_skype .skype_list > div, .header_support_yahoo .yahoo_list > div{ padding-bottom:5px;}
+.header_support_skype .skype_list > div a, .header_support_yahoo .yahoo_list > div a{ display:block;}
+.header_menu_top{ float:right; line-height:35px; border-right:1px solid #DDD;}
+.header_menu_top a{ display:block; float:left; padding:0 15px; border-left:1px #DDD solid;}
+.header_menu_top a:hover{ background-color:#E3E3E3; color:#E47100;}
+.header_logo{ padding:20px 0;}
+.header_images{ float:left; height:52px;}
+.header_search{ height:56px; display:block;}
+.header_cart{ background:#B0D100 url(../images/cart-icon.png) no-repeat 5px center; line-height:56px; height:56px; overflow:hidden; float:right; display:block; padding:0 10px 0px 40px; color:#FFFFFF; font-weight:bold;}
+.header_cart b{ color:#FFEA00; font-size:16px;}
+.header_cart:hover{ color:#FFFFFF;}
+.header_border_search{ border:1px #B0D100 solid; border-right:1px #B0D100 solid; border-right:0px; padding:10px 10px 9px 10px; float:left;  margin-left: 314px}
+.header_border_search .form_submit{ float:left;}
+.header_border_search .form_select{ float:left; border:1px #BCBEC0 solid; border-right:0px; height:33px; background:#F3F3F3 url(../images/bottom_icon.jpg) no-repeat 125px center;}
+.header_border_search .form_select a{ color:#000000; cursor:pointer; display:block; line-height:33px; padding:0 30px 0 10px; font-weight:bold;}
+.header_border_search .form_select a:hover{ color:#000000;}
+.header_border_search .form_input{ float:left; border:1px #B0D100 solid; border-right:0px; height:33px;}
+.header_border_search .form_input input{ font-size:13px; border:0px; margin-top:9px; width:300px; padding:0px 10px;}
+.header_menu_big{ padding-bottom:10px;}
+.header_menu_list{ position:relative; height:56px; width:238px; float:left; line-height:56px; margin-right:2px; font-size:14px; font-weight:bold; text-align:center;}
+.header_menu_list > .menu_sub_1{ position:absolute; left:0px; top:56px; z-index:9999; width:180px;}
+.header_menu_list > .menu_sub_1.dienthoai{ background:#FFFFFF; border:1px #CCCCCC solid; border-top:0px; border-bottom:0px; display:none;}
+.header_menu_list:hover > .menu_sub_1{ display:block;}
+.header_menu_list:hover > a.dienthoai{ background:#FF7F00 url(../images/icon_mobi.png) no-repeat 86% center; padding-left:0px; padding-right:30px;
+	-webkit-box-shadow: #666 0px 0px 20px inset;
+	-moz-box-shadow: #666 0px 0px 20px inset;
+	box-shadow: #666 0px 0px 20px inset;
+	behavior: url(http://yourphone.vn/PIE.htc);
+}
+.header_menu_list > .menu_sub_1 a{ color:#333333; font-size:12px; font-weight:bold; display:block; line-height:17px; text-align:left; padding:5px 10px; border-bottom:1px #CCCCCC solid;}
+.header_menu_list > .menu_sub_1 .menu_sub_1_list{ position:relative;}
+.header_menu_list > .menu_sub_1 .menu_sub_1_list > .menu_sub_2{ position:absolute; left:180px; top:0px; width:180px; background:#FFFFFF; border:1px #CCCCCC solid; border-bottom:0px; display:none;}
+.header_menu_list > .menu_sub_1 .menu_sub_1_list:hover > .menu_sub_2{ display:block;}
+.header_menu_list > .menu_sub_1 .menu_sub_1_list:hover > a{ color:#FFFFFF; background:#FF7F00;}
+.header_menu_list > .menu_sub_1 .menu_sub_1_list > .menu_sub_2 a:hover{ color:#FFFFFF; background:#FF7F00;}
+.header_menu_list > a{ display:block; color:#FFFFFF; text-shadow:1px 1px 1px #444;}
+.header_menu_list > a.a3{ background:#FF7F00 url(../images/icon_mobi.png) no-repeat 8% center; padding-left:30px;}
+.header_menu_list > a.a1{ background:#BF0063 url(../images/icon-kitchen.png) no-repeat 8% center; padding-left:30px;}
+.header_menu_list > a.a4{ background:#057200 url(../images/icon_thietbi.png) no-repeat 8% center; padding-left:30px;}
+.header_menu_list > a.a6{ background:#FF3234 url(../images/icon_kts.png) no-repeat 8% center; padding-left:54px;}
+.header_menu_list > a.a7{ background:#003483 url(../images/icon_thietbimang.png) no-repeat 8% center; padding-left:30px;}
+.header_menu_list > a.a8{ background:#3A3A3A url(../images/icon_phanmem.png) no-repeat 8% center; padding-left:30px;}
+
+.header_menu_list > a.a2{ background:#7FBA00 url(../images/icon_mtb.png) no-repeat 6% 5px; padding-left:40px;}
+.header_menu_list > a.a5{ background:#0078FF url(../images/icon_phukien.png) no-repeat 10% 4px; padding-left:40px;}
+.header_menu_list > a:hover{ 
+	-webkit-box-shadow: #666 0px 0px 20px inset;
+	-moz-box-shadow: #666 0px 0px 20px inset;
+	box-shadow: #666 0px 0px 20px inset;
+	;
+}
+.header_menu_list > a:hover.a3{ background:#FF7F00 url(../images/icon_mobi.png) no-repeat 86% center; padding-left:0px; padding-right:30px;}
+.header_menu_list > a:hover.a1{ background:#BF0063 url(../images/icon-kitchen.png) no-repeat 86% center; padding-left:0px; padding-right:30px;}
+.header_menu_list > a:hover.a4{ background:#057200 url(../images/icon_thietbi.png) no-repeat 86% center; padding-left:0px; padding-right:30px;}
+.header_menu_list > a:hover.a6{ background:#FF3234 url(../images/icon_kts.png) no-repeat 86% center; padding-left:0px; padding-right:60px;}
+.header_menu_list > a:hover.a7{ background:#003483 url(../images/icon_thietbimang.png) no-repeat 86% center; padding-left:0px; padding-right:30px;}
+.header_menu_list > a:hover.a8{ background:#3A3A3A url(../images/icon_phanmem.png) no-repeat 86% center; padding-left:0px; padding-right:30px;}
+
+.header_menu_list > a:hover.a2{ background:#7FBA00 url(../images/icon_mtb.png) no-repeat 92% 5px; padding-left:0px; padding-right:35px;}
+.header_menu_list > a:hover.a5{ background:#0078FF url(../images/icon_phukien.png) no-repeat 85% 4px; padding-left:0px; padding-right:40px;}
+.header_banner_static{ background:#000000; height:250px; float:right; margin-top: 10px;}
+
+.header_home_title{ background:#F3F3F3; border:1px #D1D3D4 solid; height:31px; line-height:31px; padding-left:40px; font-size:12px; overflow:hidden;
+position:relative; margin-top:10px; color:#10418A; font-weight:bold; text-transform:uppercase;}
+.header_home_title img.icon{ position:absolute; left:-1px; top:-1px;}
+.header_home_title a{ color:#10418A;}
+.header_home_title a:hover{ text-decoration:underline;}
+.header_home_title span{ padding:0 5px;}
+
+.home_title_thuonghieu{ background:url(../images/icon-bg.jpg) repeat-x center; margin:10px 0px; text-align:center; font-weight:100;}
+.home_title_thuonghieu b{ background:#FFFFFF; padding:0 5px; line-height:20px; font-size:14px; color:#303030; font-weight:bold;}
+.home_thuonghieu{ padding-bottom:20px;}
+.home_thuonghieu a{ display:block; float:left; margin-right:25px;}
+.home_thuonghieu a.end{ margin-right:0px;}
+.home_thuonghieu img{ margin-top:12px;}
+
+.content_right{ width:339px; float:left;}
+.content_left{ width:861px; float:left;}
+.right_banner{ width:330px; margin-bottom:10px; overflow:hidden; margin-top:10px;}
+.right_banner a{ display:block;}
+.right_sptb_title{ border:1px #B0D100 solid; font-weight:bold; padding:2px 10px; font-size:14px;}
+.right_sptb_title span{ border-left:2px #FF7F00 solid; padding-left:5px; line-height:30px;}
+.right_sptb_content{ border-left:1px #B0D100 solid; border-bottom:1px #B0D100 solid; display:table; margin-bottom:10px;}
+.right_sptb_list{ border-bottom:1px #B0D100 solid; border-right:1px #D1D3D4 solid; float:left; text-align:center; font-size:12px; font-weight:100;}
+.right_sptb_list.list_bg{ background:#F8F8F8;}
+.right_sptb_list a{ height:35px; display: table-cell; vertical-align:middle; line-height:15px;width:163px; color:#003483;}
+.right_sptb_list.list_right a{ width:164px;}
+.right_news_top{ position:relative; margin-top:10px;}
+.right_news_top .title{ position:absolute;width:330px; bottom:0; left:0; background:url(../images/bg_new_right.png) repeat;}
+.right_news_top .title a{ padding:10px; display:block; color:#FFFFFF; font-weight:bold;}
+.right_news_top .title a:hover{ text-decoration:underline;}
+.right_new_big{ background:#F8F8F8; padding-top:10px; padding-right:5px;}
+.right_new_list{ margin-bottom:10px; border-bottom:1px #CCCCCC solid; padding-bottom:10px;}
+.right_new_list .picture{ float:left; margin-right:10px;}
+.right_new_list .title{ font-weight:bold; line-height:15px; font-size:12px;}
+.right_new_list .date{ color:#999; padding-top:5px;}
+.right_title{ border-left:2px #B0D100 solid; font-weight:bold; padding:0px 5px; font-size:14px; margin-bottom:10px;}
+.right_product_content{ border:1px #CCCCCC solid; margin-bottom:10px;}
+.right_product_list{ float:left; width:160px; text-align:center;}
+.right_product_list.product_right{ float:right;}
+
+.product_piture{ text-align:center; height:150px; padding:5px; padding-bottom:10px;}
+.product_name{ padding:0 10px; line-height:15px; height:30px; overflow:hidden;}
+.product_name a{ color:#000000; font-size:12px;}
+.product_name a:hover{ color:#116BA2; text-decoration:underline;}
+.product_price{ color:#FF0000; font-weight:bold; font-size:16px; padding:5px 10px 5px 10px;}
+.product_stock{ color:#666666; padding:0px 10px 5px 10px;}
+.product_cat_title{ padding-bottom:10px;}
+.product_cat_title h2{ float:left;}
+.product_cat_title a.title{ color:#4C4C4C; font-weight:bold; font-family:UTM_Cafeta; font-size:24px; text-transform:uppercase;}
+.product_cat_title a.view{ float:right; font-weight:bold; color:#003483;}
+.product_list_big{ border-left:1px solid #CCCCCC; border-top:3px solid #B0D100; margin-bottom:20px;}
+.product_list{ border-bottom:1px #CCCCCC solid; border-right:1px #CCCCCC solid; width:171px; float:left; padding:10px 0px; position:relative;}
+.product_thongso{ position:absolute; width:172px; height:265px; top:0px; left:-1px; background:#DEDEDE; overflow:hidden; display:block; opacity:0}
+.product_thongso > div{ padding:5px;}
+.product_thongso:hover{ opacity:0.9;}
+.product_thongso .list_thongso_name{ font-size:12px; font-weight:bold; color:#333333;}
+.product_thongso .list_thongso_price{ color:#FF0000; font-weight:bold; font-size:14px; padding-bottom:3px;}
+.product_thongso .list_thongso{ color:#444; font-size:11px; line-height:14px; list-style:square outside none; margin-left:10px;}
+.product_breadcrumb{ margin-top:10px; height:35px; line-height:35px; border:1px #CCCCCC solid; background:#F3F3F3; padding:0 10px; margin-bottom:10px; font-size:12px;}
+.product_breadcrumb span{ padding:0 5px; float:left;}
+.product_breadcrumb a{ font-weight:bold; font-size:12px; float:left;}
+.product_breadcrumb h1{ float:left;}
+.product_detail_left{ float:left; width:315px; text-align:center; border:1px #CCCCCC solid; margin-bottom:10px;}
+.product_detail_picture{ height:450px;}
+.product_detail_left_bottom{ border-top:1px #CCCCCC solid; background:#F8F8F8;}
+.product_detail_left_bottom .list{ text-align:center; float:left; width:89px; border-right:1px #CCCCCC solid; height:30px; line-height:15px; padding:5px; font-size:11px;}
+.product_detail_left_bottom .list a{ color:#58595b; display:block;}
+.product_detail_left_bottom .list.xoay360{ background:url(../images/icon_pxoay360.png) no-repeat 10px center; padding-left:10px; line-height:30px;}
+.product_detail_left_bottom .list.video{ background:url(../images/icon_pvideo.png) no-repeat 5px center; padding-left:25px; width:75px;}
+.product_detail_left_bottom .list.hinhanh{ background:url(../images/icon_phinhanh.png) no-repeat 5px center; padding-left:10px; border-right:0px;}
+.product_detail_right{ float:right; width:535px; margin-bottom:10px;}
+.product_detail_right .title{ font-size:18px; color:#FF0000; font-weight:bold;}
+.product_detail_right .teaser{ font-size:12px; color:#666666; font-weight:100; padding:5px 0px 10px 0;}
+.product_detail_right .content{ font-size:12px;}
+.product_detail_right .content .tab_title{ float:left; padding:0 15px; color:#FFFFFF; font-weight:bold; font-size:14px; margin-right:3px; line-height:30px; background:#FF7F00; border-bottom:3px #FFFFFF solid; display:block;}
+.product_detail_right .content .tab_title.current{ background:#ED1C24; border-bottom:3px #ED1C24 solid;}
+.product_detail_right .thong_tin_banggia{ background:#ED1C24; padding:15px; color:#FFFFFF; font-weight:bold;}
+.product_detail_right .thong_tin_banggia .price{ font-size:24px; padding-bottom:15px; padding-top:10px; border-bottom:1px #F26166 solid; margin-bottom:10px;}
+.product_detail_right .thong_tin_banggia .price span{ color:#ffe400;}
+.product_detail_right .thong_tin_banggia .note{ line-height:20px; height:48px; overflow:hidden; padding-bottom:15px; border-bottom:1px #F26166 solid; margin-bottom:10px;}
+.product_detail_right .thong_tin_banggia li{ list-style:inside circle; padding-bottom:10px;}
+.product_detail_right .thong_tin_banggia .tab_content{ display:none;}
+.product_detail_right .dat_hang{ background:#FFFFFF; border:1px #CCCCCC solid; border-top:0px; padding:5px; height:135px; position:relative;}
+.product_detail_right .dat_hang .buttom{ background:url(../images/bg_button_cart_1.jpg) repeat-x; float:left; height:56px; overflow:hidden; width:125px; color:#FFFFFF; display:block; text-align:center; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(http://yourphone.vn/PIE.htc);
+}
+.product_detail_right .dat_hang .buttom span{ display:block; padding-top:10px; padding-bottom:5px; text-transform:uppercase; font-family:UTM_Cafeta; font-weight:100; font-size:22px;}
+.product_detail_right .dat_hang .buttom font{ font-size:10px; font-weight:bold;}
+.product_detail_right .dat_hang .buttom.tuxa{ background:url(../images/bg_button_cart_2.jpg) repeat-x; margin-left:12px;font-family:UTM_Cafeta; font-weight:100; font-size:22px; text-transform:uppercase;}
+.product_detail_right .dat_hang .buttom.tuxa font{ font-weight:100; font-size:20px; padding-top:3px; display:block; line-height:24px;}
+/*.product_detail_right .detail_product_care{ float:right; width:280px; margin-bottom:6px;}*/
+.product_detail_right .detail_product_care{ position:absolute; left:280px; top:3px; width:260px;}
+.product_detail_right .detail_product_care .goldcare{ float:left; display:block;}
+.product_detail_right .detail_product_care .noidung{ float:left; margin-left:8px; width:150px; font-size:11px; font-weight:bold; line-height:13px; padding-top:15px;}
+.product_detail_right .detail_product_care .noidung > div{ background:url(../images/bg_text_BHV.jpg) no-repeat left 2px; padding-left:20px; padding-bottom:5px;}
+.product_detail_right .detail_product_address{ color:#000000; font-size:20px; padding-bottom:10px; font-family:UTM_Cafeta; text-transform:uppercase; margin-top:-7px;}
+.product_detail_right .detail_product_address font{ background:url(../images/icon_home_address.png) no-repeat left center; height:30px; line-height:30px; width:32px; text-align:center; display:block; overflow:hidden;
+float:left; margin-right:5px; color:#FFFFFF; font-size:11px; margin-top:-7px;}
+.product_detail_tskt{ border-left:1px #D1D3D4 solid; border-top:1px #D1D3D4 solid; display:table; margin-bottom:10px;}
+.product_detail_right .detail_product_phone{ color:#000000; font-size:18px; padding-bottom:10px; font-family:UTM_Cafeta; text-transform:uppercase;}
+.product_detail_right .detail_product_phone font{ background:url(../images/icon_phone_detail.png) no-repeat 2px center; height:28px; line-height:28px; width:32px; text-align:center; display:block; overflow:hidden;
+float:left; margin-right:5px; color:#FFFFFF; font-size:11px; margin-top:-7px;}
+.product_detail_tskt .list_thongso{ border-bottom:1px #D1D3D4 solid; border-right:1px #D1D3D4 solid; float:left;}
+.product_detail_tskt .list_thongso.list_bg{ background:#F8F8F8;}
+.product_detail_tskt .list_thongso span{ height:35px; display: table-cell; vertical-align:middle; line-height:15px; width:409px; color:#555; padding:0 10px;}
+.product_detail_tags{ margin-bottom:10px; color:#666666;}
+.product_detail_other{ border-left:1px #CCCCCC solid; border-top:1px #CCCCCC solid; margin-bottom:10px;}
+
+.footer_big{ background:#272727; width:100%;}
+.footer_big_2{ background:#8FB000; width:100%; padding:10px 0; color:#FFFFFF; font-size:12px; text-align:center;}
+.footer_pay{ width:194px; border-right:1px #494949 solid; float:left; padding-right:10px;}
+.footer_title{ text-transform:uppercase; color:#FFFFFF; font-size:20px; font-family:UTM_Cafeta; padding-bottom:15px;}
+.footer_pay_image{ margin-bottom:20px;}
+.footer_list_social a{ display: block;
+    float: left;
+    margin-right: 9px;
+    margin-bottom: 9px;}
+.footer_menu{ width:160px; border-right:1px #494949 solid; float:left; margin-left:10px; padding-right:10px;}
+.footer_menu li{ list-style:none; line-height:22px;}
+.footer_menu a{ font-size:12px; font-weight:100; color:#d1d3d4;}
+.footer_menu a:hover{ color:#FFFFFF; text-decoration:underline;}
+.footer_menu b{ font-weight:bold;}
+.footer_menu.sanphamthemanh{ width:340px; color:#d1d3d4}
+.footer_menu_taikhoan{ float:right; width:245px;}
+.footer_menu_taikhoan .title_nganhang{ font-weight:bold; color:#FFFF5B; font-size:14px; padding-bottom:3px;}
+.footer_menu_taikhoan .nganhang_thongtin{ color:#d1d3d4;}
+.footer_menu_taikhoan .nganhang_thongtin strong{ color:#FFFF5B; font-weight:bold; font-size:16px;}
+.footer_menu_taikhoan .ngan{ margin:10px 0; height:1px; background:#494949; overflow:hidden;}
+
+.type_danhmuc{ color:#ff3234; font-size:26px; font-family:UTM_Cafeta; text-transform:uppercase; margin:10px 0;}
+.type_category_list{ padding-top:20px; border-bottom:1px #CCCCCC solid; margin-bottom:20px;}
+.type_category_list li{ list-style:none;}
+.type_category_list li.list{ width:20%; float:left; list-style:none; text-align:center; padding-bottom:10px;}
+.type_category_list li.list a{ display:block;}
+.type_category_list h2{ font-size:12px; padding:5px;}
+.type_category_list h3{ font-size:11px; color:#676767; line-height:14px; font-weight:bold;}
+.type_category_title{ border-bottom:1px #ED1C24 solid; height:35px; font-family:UTM_Cafeta; line-height:35px; font-size:20px; text-transform:uppercase;}
+.type_category_title .tab{ background:#EEEEEE; float:left; display:block; color:#8F8F8F; padding:0 25px; cursor:pointer; margin-right:3px; font-weight:100;}
+.type_category_title .tab.active{ background:#ED1C24; color:#FFFFFF;}
+.tab_category{ display:none;}
+.tab_category.product_list_big{ display:block;}
+.type_category_content{ border: 1px solid #CCCCCC; border-top: 1px solid #ED1C24; margin-bottom: 20px; font-size:12px; font-weight:100; padding:15px; overflow:hidden;}
+.type_category_content p{ padding:5px 0px;}
+.type_category_content strong,.type_category_content b{ font-weight:bold;}
+
+.danhmuc_news_list{ border-bottom:1px #CCCCCC dotted; margin-bottom:10px;}
+.danhmuc_news_images{ float:left; padding:5px 10px 10px 0px;}
+.danhmuc_news_images img{ border:1px #999999 solid; padding:1px;}
+.danhmuc_news_title{ padding-bottom:10px; font-size:14px; font-weight:bold;}
+.danhmuc_news_title a{ color:#0D537D;}
+.danhmuc_news_title a:hover{ color:#e96e28;}
+.danhmuc_news_teaser{ padding-bottom:10px; font-size:13px; font-weight:100; font-family:Tahoma;}
+.danhmuc_news_teaser b{ font-weight:bold;}
+
+.phantrang{ padding:10px; font-weight:bold; border-bottom:1px #CCCCCC solid; border-right:1px #CCCCCC solid;}
+.phantrang a{ background:#EDEDED; height:22px; width:22px; line-height:22px; display:block; float:left; margin-right:3px; text-align:center; color:#737373;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	behavior: url(http://yourphone.vn/PIE.htc);
+}
+.phantrang a.current{ background:#00A681; color:#FFF;}
+
+.showcart_table{ margin-bottom:10px;}
+.showcart_table th,.showcart_table td{ padding:10px;}
+.showcart_table th,.showcart_table strong{ font-weight:bold; font-size:16px; color:#FF0000;}
+.showcart_table th,.showcart_table b{ font-weight:bold; font-size:16px; color:#003483;}
+.showcart_table th,.showcart_table td.title{ font-weight:bold; text-align:center; color:#18407C;}
+.showcart_table th,.showcart_table .button{ color:#FFFFFF; font-weight:bold; padding:5px 30px; background:#FF7F00; border:none; cursor:pointer; font-size:12px; margin-right:10px;  transition:all 0.3s ease 0s;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(http://yourphone.vn/PIE.htc);
+}
+.showcart_table th,.showcart_table .button:hover{ color:#FFFFFF; background:#FF3234;}
+.box-contact p{ padding-bottom:5px;}
+.box-contact p label{ width:150px; display:block; float:left; font-weight:bold; text-align:right;}
+.box-contact p input{ width:200px; font-size:12px; color:#666666; border:1px #CCCCCC solid; padding:3px 5px; margin-left:10px;}
+.box-contact p textarea{ width:400px; font-size:12px; color:#666666; border:1px #CCCCCC solid; padding:3px 5px; margin-left:10px; height:70px;}
+.box-contact p input.button{ color:#FFFFFF; font-weight:bold; padding:5px 0px; width:150px; background:#FF7F00; border:none; cursor:pointer; font-size:12px; margin-right:10px;  transition:all 0.3s ease 0s;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(http://yourphone.vn/PIE.htc);
+}
+.box-contact p input.button:hover{ color:#FFFFFF; background:#FF3234;}
+.detail_news_teaser{ font-size:12px; font-weight:bold; padding-bottom:5px;}
+.detail_news_description{ text-align:justify; padding-bottom:20px;}
+.detail_news_other_title{ font-weight:bold; font-size:16px; padding-bottom:10px; color:#003300;}
+.detail_news_other{ margin-left:15px;}
+.detail_news_other li{ list-style:outside circle none; padding-left:5px; padding-bottom:5px;}
+.detail_news_other li h3{ font-size:12px; font-weight:100;}
+.detail_news_other li h3 a:hover{ text-decoration:underline;}
+
+#PopupHow{ display:none;}
+.popupBackground{ background:#000000; width:100%; height:100%; position:fixed; z-index:99999; opacity:0.6}
+.popupBig{ background:#FCB040; display:block; left:50%; margin-left:-250px; position:fixed; top:50px; width:500px; z-index:999999;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	behavior: url(http://yourphone.vn/PIE.htc);
+}
+.popupCloser{ background:#000000; border: 4px solid #FFFFFF; color: #FFFFFF; cursor: pointer; font-size: 18px; font-weight: 700;
+	position: absolute; right: -10px; text-align: center; top: -10px; width: 32px; height: 32px; line-height: 32px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+	behavior: url(http://yourphone.vn/PIE.htc);
+}
+.popup_header{ margin:10px; margin-bottom:0px; padding:10px; padding-bottom:5px; border:2px #FFFFFF solid; border-bottom:0px; font-size:14px; font-weight:bold; color:#FFFFFF; line-height:20px; text-align:justify;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
+	behavior: url(http://yourphone.vn/PIE.htc);
+}
+.popup_content_NN{ background:#FFFFFF; padding:0px 10px;}
+.popup_content{ border:2px #FCB040 solid; border-bottom:0px; border-top:0px; padding:5px 10px; color:#ED1C24; font-weight:bold;}
+.popup_content > div{ padding:5px 0px; font-size:16px; line-height:20px;}
+.popup_content > div.name{ text-transform:uppercase;}
+.popup_footer{ margin:10px; margin-top:0px; padding:10px; padding-bottom:5px; border:2px #FFFFFF solid; border-top:0px; font-size:14px; font-weight:bold; color:#FFFFFF; line-height:20px;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	behavior: url(http://yourphone.vn/PIE.htc);
+}
+.popup_footer > div{ padding:5px 0; text-align:justify;}

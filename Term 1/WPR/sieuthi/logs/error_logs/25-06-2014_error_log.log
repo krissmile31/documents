@@ -1,0 +1,7 @@
+[Wed, 25 Jun 2014 02:25:16 +0700] [174.129.237.157] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Wed, 25 Jun 2014 02:32:49 +0700] [174.129.237.157] [Notice(8): Undefined index: userid] [FILE: /modules/shops/funcs/order.php] [LINE: 20]
+[Wed, 25 Jun 2014 02:32:49 +0700] [174.129.237.157] [Notice(8): Undefined index: shops_cart] [FILE: /modules/shops/funcs/order.php] [LINE: 123]
+[Wed, 25 Jun 2014 02:32:49 +0700] [174.129.237.157] [Warning(2): Invalid argument supplied for foreach()] [FILE: /modules/shops/funcs/order.php] [LINE: 123]
+[Wed, 25 Jun 2014 02:37:48 +0700] [174.129.237.157] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogscate.php] [LINE: 115]
+[Wed, 25 Jun 2014 14:52:53 +0700] [123.20.54.225] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]
+[Wed, 25 Jun 2014 14:57:52 +0700] [118.70.177.245] [Notice(8): Undefined variable: html] [FILE: /modules/shops/blocks/global.block_catalogs.php] [LINE: 123]

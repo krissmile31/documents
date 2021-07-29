@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <%- include('../partials/js'); -%>
+  <%- include('../partials/head'); -%>
+  <body class="container-fluid">
+    <div class="jumbotron">
+    	<%- include('../partials/header'); %>
+    	<div class="card" style="width:29rem; height: 15rem;">
+    		<div class="card-body">
+    			<h3 class="card-title">User Information</h3>
+				<h4 class="card-text">Name: <%- userInformation.name %></h4>
+				<h4 class="card-text">Address: <%- userInformation.address %></h4>
+			</div>
+			<div class="card-footer">
+        <div class="btn-group w-100">
+  				<a href="/users/edit" class="btn btn-primary w-100">Edit Information</a>
+  				<a href="/users/change-password" class="btn btn-success w-100">Change Password</a>
+        </div>
+			</div>
+    	</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<div class="row" id="header">
+  <a href="/">
+      <h1>
+        <img style="height: 63px; width: 100%; margin-top: -126px;" src="https://www.oxfordmartin.ox.ac.uk/images/_1400x450_crop_center-center_none/AdobeStock_AlexanderRaths_Veg_smaller.jpg">
+        <p class="hd">👉 Welcome to food world 👈</p></h1></a>
+  </div>
+  <% if (typeof userID == 'undefined') {var userID = 0, isAdmin = false;} -%>
+  <div class="as">
+    <div class="btn-group float-right" role="group"> 
+      <% if (userID > 0) { -%>
+        <a href="/users/information" class="btn btn-light btn-sm" style="min-width:15rem"><%= isAdmin ? name + " - Admin": name %></a>
+        <% if (!isAdmin) { -%>
+          <a href="/users/chosen-products" class="btn btn-light btn-sm" style="min-width:6rem"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            Cart</a>
+        <% } -%>
+        <a href="/order/list" class="btn btn-light btn-sm" style="min-width:6rem">Order Status</a>
+        <a href="/users/logout" class="btn btn-light btn-sm" style="min-width:6rem">Logout</a>
+      <% } else { -%>
+        <a href="/users/login" class="btn btn-light btn-sm" style="min-width:6rem">Login</a>
+        <a href="/users/register" class="btn btn-light btn-sm" style="min-width:6rem">Sign Up</a>
+      <% } -%>
+    </div>
+  </div>
+</div>

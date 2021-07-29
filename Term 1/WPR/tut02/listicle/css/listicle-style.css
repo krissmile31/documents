@@ -1,0 +1,119 @@
+/**
+ TODO(you): Write the CSS necessary to complete HW1!
+*/
+
+header {
+    background-image: url(../images/header.jpg);
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: top;
+    height: 500px;
+    background-color: transparent rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pageTitle {
+    font-family: 'Roboto Slab', serif;
+    font-display: fallback;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+    max-width: 780px;
+    text-align: center;
+}
+
+.profile {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+    line-height: 24px;
+    text-align: center;
+}
+
+.profile em {
+    border-bottom: solid#e6e6e6;
+    border-width: 2px;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+.profile img {
+    width: 100px;
+    border-radius: 100%;
+    border: 1px white;
+    margin-top: -50px;
+}
+
+body {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 66.67%; 
+}
+
+
+.content img {
+    margin-bottom: 120px;
+    text-align: justify;
+    display: block;
+    width: 100%;
+}
+
+.heading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    margin: 0;
+}
+
+.number {
+    color: rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    width: 40px;
+    margin-right: 40px;
+    margin-left: -80px;
+}
+
+.recom {
+    display: inline-block;
+    margin: 20px 0px;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(51, 51, 51);
+    margin: 20px 0px;
+    text-align: justify;
+}
+
+a {
+    font-family: 'Roboto Slab', serif;
+    color: #42b4d6;
+}
+
+a:link {
+
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

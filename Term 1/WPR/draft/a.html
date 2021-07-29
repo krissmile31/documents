@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Name It Quiz</title>
+</head>
+<body>
+    <style>
+        #frame001 {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: auto;
+            height: auto;
+            padding: 5px;
+        }
+
+        #color001 {
+            color: black;
+            font-size: large;
+            text-align: left;
+        }
+
+        #center001 {
+            text-align: center;
+        }
+
+        .button001 {
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .button002 {
+            width: 10px;
+            height: 10px;
+            color: red;
+        }
+
+        .d {
+            color: green;
+        }
+    </style>
+    <div id="frame001">
+        <div id="color001">
+            <div id="center001">
+                <h2><strong>Name It Quiz</strong></h2>
+            <p><strong>Word Bank:</strong> Amman - Ottawa - Jerusalem - London - Brasilia</p></div><br />
+<h2>The capital of Palestine is</h2> 
+    <div><input type="radio"  class="input001" value="C" /><span class="check001">C</span><br></div>
+    <div><input type="radio"  class="input001" value="C" /><span class="check001">C</span><br></div>
+    <div><input type="radio"  class="input001" value="D" /><span class="check001">D</span><br></div>
+    
+   <h2> ital of Pale</h2>
+    <div><input type="radio"  class="input005" value="C" /><span class="check005">C</span><br></div>
+    <div><input type="radio"  class="input005" value="D" /><span class="check005">D</span><br></div>
+    
+    
+            <div id="disappear001"><div id="center001"><button class="button001" onclick="submit001()">Submit</button></div></div><br />
+            <div id="center001"><p id="message001"></p><p id="reload001"></p></div>
+                <br />
+            <br />
+            </div>
+    </div>
+    <script>
+        var g;
+        
+        function submit001() {
+            b = document.querySelector('.input001').value;
+            c =  document.querySelector('.input005').value;
+            
+            if (b == "C") {
+                g = 1;
+                document.querySelector('.input001').value = b;
+                document.querySelector('.check001').innerHTML = "<span class=button002>C" + "✔" + "</span>";
+            } else {
+                document.querySelector('.input001').value = b;
+                document.querySelector('.check001').innerHTML = "<span class=button002>C" + "✔" + "</span>";
+                document.querySelector('.check001').innerHTML = "<span class=d>D" + "✖" + "</span>";
+                
+            }
+
+            if (c == "C") {
+                g = 1;
+                document.querySelector('.input005').value = c;
+                document.querySelector('.check005').innerHTML = "<span class=button002>C" + "✔" + "</span>";
+            } else {
+                document.querySelector('.input005').value = b;
+                document.querySelector('.check005').innerHTML = "<span class=d>" + "✖" + "</span>";
+            }
+
+            
+            if (g == 1) {
+                
+                disappear001.innerHTML = "";
+                reload001.innerHTML = "<div id=center001><button class=button001 onclick=repeat001()>Repeat</button></div>";
+            }
+        }
+
+            function repeat001() {
+                location.reload();
+            }
+    </script>
+</body>
+</html>

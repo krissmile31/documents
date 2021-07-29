@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Nguyễn Thị Hiền">
+
+    <title>Computer Shop Management System</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../libs/css/bootstrap.css" rel="stylesheet">
+
+    <!-- SweetAlert Core CSS -->
+    <link href="../libs/css/sweetalert2.css" rel="stylesheet">
+</head>
+<body ng-app="computer shop">
+<div ng-controller="MainController">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Computer Shop Management System</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="homepage.html">Home</a></li>
+                <li ng-show="!isLoggedIn()"><a href="login.html">Sign-in</a></li>
+                <li ng-show="!isLoggedIn()"><a href="registration.html">Sign-up</a></li>
+                <li ng-show="isLoggedIn()"><a href="#" ng-click="logOut()">Sign-out</a></li>
+                <li class="active"><a href="displayBooks.html">Display 
+                    Books</a></li>
+                <li ng-show="!isEmployee()"><a href="orderComputers.html">Order Computers</a></li>
+                <li ng-show="isEmployee()"><a href="addComputers.html">Add Computers</a></li>
+                <li ng-show="isEmployee()"><a href="editComputers.html">Edit Computers</a></li>
+                <li ng-show="isEmployee()"><a href="removeComputers.html">Remove Computers</a></li>
+                <li ng-show="isAccountant()"><a href="#">Update Payment</a></li>
+                <li><a href="#">Welcome, {{userName()}}</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<div ng-controller="ComputersController">
+    <div class="container">
+        <h1>Display Computers</h1>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="search">Search:</label>
+                <input type="text" class="form-control" id="search" ng-model="searchText">
+            </div>
+        </form>
+        <div class="table-responsive">
+            <table class="table .table-bordered">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Computer name</th>
+                    <th>Computer author</th>
+                    <th>Computer price</th>
+                    <th>Computer rating</th>
+                    <th>Quantity</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="computer in computers | filter:searchText">
+                    <td>{{computer.computer_id}}</td>
+                    <td><a href="#">{{computer.computer_name}}</a></td>
+                    <td>{{computer.computer_colour}}</td>
+                    <td>{{computer.computer_price}}</td>
+                    <td>{{computer.computer_rating}}</td>
+                    <td>{{computer.quantity}}</td>
+                    <td>
+                        <button class="btn btn-default" ng-click="notImplemented()">Rate</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-default" ng-click="notImplemented()">Add to cart</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="../libs/js/jquery-3.1.1.js"></script>
+<script src="../libs/js/bootstrap.js"></script>
+<!-- AngularJS Core -->
+<script src="../libs/js/angular.js"></script>
+<!-- SweetAlert Core JavaScript -->
+<script src="../libs/js/sweetalert2.js"></script>
+
+<script src="../controller/app.js"></script>
+</body>
+</html>

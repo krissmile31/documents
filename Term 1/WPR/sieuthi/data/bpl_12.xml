@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plan>
+  <id>12</id>
+  <lang></lang>
+  <title>Nạp mega</title>
+  <description>Nạp mega</description>
+  <form>sequential</form>
+  <width>332</width>
+  <height>170</height>
+  <banners>
+    <banners_item>
+      <id>14</id>
+      <title>Nạp mega</title>
+      <clid>0</clid>
+      <file_name>megacode_nap_mega.png</file_name>
+      <file_ext>png</file_ext>
+      <file_mime>image/png</file_mime>
+      <file_width>300</file_width>
+      <file_height>180</file_height>
+      <file_alt></file_alt>
+      <file_click>http://megacode.vn</file_click>
+    </banners_item>
+  </banners>
+</plan>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-13">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="Exception"/>
+	<classpathentry kind="src" path="iration"/>
+	<classpathentry kind="src" path="Iteration"/>
+	<classpathentry kind="src" path="unitTesting"/>
+	<classpathentry kind="src" path="Debugging"/>
+	<classpathentry kind="src" path="Requirement"/>
+	<classpathentry kind="src" path="OOSofDesign"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
